@@ -1,0 +1,26 @@
+/* src/Grid.css */
+.grid-container {
+    margin-top: 20px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+  }
+  
+  .grid-cell {
+    background-color: #e0e0e0; /* Light gray for unallocated units */
+    border: 1px solid #999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 5px;
+  }
+  
+  .allocated {
+    background-color: #b3e0ff; /* Light blue for allocated units */
+  }
+  
